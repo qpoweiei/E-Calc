@@ -111,7 +111,16 @@ class ViewController: UIViewController {
         label.text = String(number1)
     }
     
-    @IBAction func plus() {
+    @IBAction func zero() {
+        label3.text = ""
+        label2.text = ""
+        label2.isHidden = false
+        label3.isHidden = false
+        number1 = number1*10
+        label.text = String(number1)
+    }
+    
+    func plus() {
         label3.text = ""
         label2.text = ""
         label2.isHidden = false
